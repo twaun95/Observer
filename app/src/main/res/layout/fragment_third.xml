@@ -8,30 +8,29 @@
     </data>
 
     <FrameLayout
-        android:id="@+id/frameLayout_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:context=".MainActivity">
+            android:background="@color/yellow">
 
             <TextView
                 android:id="@+id/text_header"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Activity"
-                app:layout_constraintBottom_toTopOf="@id/button_next"
+                android:text="Third Fragment"
+                app:layout_constraintBottom_toTopOf="@id/button_third"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent" />
 
             <Button
-                android:id="@+id/button_next"
+                android:id="@+id/button_third"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="이동"
+                android:text="데이터 변경"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -45,8 +44,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/button_next" />
-
+                app:layout_constraintTop_toBottomOf="@id/button_third" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </FrameLayout>
 </layout>
